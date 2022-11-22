@@ -1,56 +1,77 @@
 body{
-   font-family: 'Courier New', Courier, monospace; 
-   font-size: 17px;
-   line-height: 1.6;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 17px;
+    line-height: 1.6;
+ 
+ }
+ 
+ .button{
+     background-color: rgb(164, 164, 121);;
+     padding: 1em 2em;
+     color: wheat;
+     border: 0;
+ }
+ 
+ button:hover{
+     background: olive;
+ }
+ 
+ .modal{
+     display: none;
+     position: fixed;
+     z-index: 1;
+     left: 0;
+     top: 0;
+     height: 100%;
+     width: 100%;
+     overflow: auto;
+     background-color: rgba(0,0,0,0.5);
+     
+ }
+ 
 
-}
-
-.button{
-    background-color: rgb(244, 151, 117);
-    padding: 1em 2em;
+ .modal-content{
+ background-color: #f4f4f4;
+ margin: 10% auto;
+ width: 600px;
+ box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
+ animation-name: modalOpen;
+ animation-duration: 2s;
+ }
+ 
+ .modal-header h2 .modal-footer h3{
+    margin: 0;
+ }
+ .modal-header{
+    background-color: rgb(164, 164, 121);
     color: wheat;
-    border: 0;
-}
+    padding: 15px;
 
-button:hover{
-    background: olive;
-}
+ }
 
-.modal{
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-}
+ .modal-body{
+    padding: 10px 20px;
 
-.modal-content{
-background-color: #f4f4f4;
-margin: 20% auto;
-padding: 20px;
-width: 70%;
-box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.2);
-animation-name: modalOpen;
-animation-duration: 2s;
-}
-
-.closeBtn{
-    color: #ccc;
-    float: right;
-    font-size: 30px;
-}
-
-.closeBtn:hover, colgroup:focus{
-    color: coral;
-    cursor: pointer;
-    font-weight: 500;
-}
-
-@keyframes modalOpen{
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
+ }
+ .modal-footer{
+    background-color: rgb(164, 164, 121);
+    padding: 10px;
+    color: wheat;
+    text-align: center;
+ }
+ .closeBtn{
+     color: wheat;
+     float: right;
+     font-size: 30px;
+ }
+ 
+ .closeBtn:hover, colgroup:focus{
+     color: olive;
+     cursor: pointer;
+     font-weight: 500;
+ }
+ 
+ @keyframes modalOpen{
+     from {opacity: 0;}
+     to {opacity: 1;}
+ }
