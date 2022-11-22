@@ -1,7 +1,7 @@
 // get  modal element
 let modal = document.getElementById("simpleModal");
 // get  open modal button
-let modalBtn = document.getElementById("modalBtn");  
+let modalBtn = document.getElementById("modalBtn");
 // get close button
 let closeBtn = document.getElementById("closeBtn");
 
@@ -32,5 +32,5 @@ function clickOutside(e) {
     if (e.target == modal) {
         modal.style.display = 'none';
     }
-    
+
 }
