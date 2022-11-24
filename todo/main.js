@@ -1,17 +1,6 @@
 
 let todolist = ["call to kitchen master", "make appointment", "do dinner"]
-
-let buttonAdd = document.getElementById('AddBtn');
-buttonAdd.addEventListener('click', addTodo());
-
-function addTodo() {
-    let textBox = document.getElementById('todo-title');
-    let title = textBox.value;
-    todolist.push(title);
-    render()
-}
-
-
+render()
 
 function render() {
     //reset our list
@@ -24,6 +13,20 @@ function render() {
         todolist.appendChild(element);
     })
 }
+
+function addTodo() {
+    let textBox = document.getElementById('todo-title');
+    let title = textBox.value;
+    todolist.push(title);
+    render()
+}
+
+let buttonAdd = document.getElementById('AddBtn');
+//listen for click
+buttonAdd.addEventListener('click', addTodo);
+
+
+
 
 
 
