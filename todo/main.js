@@ -5,21 +5,32 @@ buttonAdd.addEventListener('click', addTodo);
 
 //MODEL section
 
-let todolist = [{
-    title: "call to kitchen master",
-    dueDate: '2022-12-12',
-    id: 1
-}, {
-    title: "make appointment",
-    dueDate: '2022-12-12',
-    id: 2
-}, {
-    title: "buy flowers",
-    dueDate: '2022-12-12',
-    id: 3
-},
-]
+// if local storage has a todolist array than use it
+// otherwise use the default array
 
+let todolist;
+// first we retrive localstorage
+const savedTodos = JSON.parse(localStorage.getItem('todolist'));
+// check if it's an array
+
+if (Array.isArray(savedTodos)) {
+    todolist = savedTodos;
+} else {
+    todolist = [{
+        title: "call to kitchen master",
+        dueDate: '2022-12-12',
+        id: 1
+    }, {
+        title: "make appointment",
+        dueDate: '2022-12-12',
+        id: 2
+    }, {
+        title: "buy flowers",
+        dueDate: '2022-12-12',
+        id: 3
+    }
+    ]  
+ }
 
 // create method
 
@@ -32,6 +43,7 @@ function createTodo(title, dueDate) {
             id: id
 
         });
+        saveTodo()
 }
 
 //delete method 
@@ -46,8 +58,14 @@ function removeTodo(idToDelete) {
             return true;
         }
     });
+    saveTodo()
 }
 
+// save to todo
+
+function saveTodo() {
+    localStorage.setItem("todolist", JSON.stringify(todolist)); 
+}
 
 //CONTROLLER section
 
@@ -89,6 +107,7 @@ function render() {
         todolist.appendChild(element);
     })
 }
+render()
 
 
 
