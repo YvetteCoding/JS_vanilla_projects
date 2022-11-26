@@ -1,0 +1,33 @@
+body {
+    background: darkgray;
+  }
+  
+  .fill {
+    background-image: url('../public/peony.jpg');
+    background-size: cover;
+    position: relative;
+    height: 150px;
+    width: 150px;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+  }
+  
+  .hold {
+    border: solid 5px rgb(120, 7, 7);
+  }
+  
+  .empty {
+    display: inline-block;
+    height: 160px;
+    width: 160px;
+    margin: 10px;
+    border: solid 3px whitesmoke;
+    background: white;
+  }
+  
+  .hovered {
+    background: rgb(120, 7, 7);
+ 
+  }
+  
