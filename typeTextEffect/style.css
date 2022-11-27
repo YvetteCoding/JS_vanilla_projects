@@ -1,10 +1,38 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap');
+
+body{
+
+  font-family: "Raleway", sans-serif;
+  height: 100vh;
+  background-image: url(..//public/milad-fakurian-GJKx5lhwU3M-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:black;
 }
 
-.header {
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 3rem;
+}
+
+h1, h2 {
+  font-weight: 200;
+  margin: 0.4rem;
+}
+
+h1{
+  font-size: 3.5rem;
+
+}
+h2{
+  font-size: 2rem;
+  color: #aaa;
+}
+/* .header {
   width: 100%;
   height: 100vh;
   background: #ffff;
@@ -44,35 +72,23 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ccc;
+  color: #ccc;
+} */
+
+
+ a {
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 0.5rem;
+  border: 0.32rem solid #ccc;
+  color: #ccc;
+  padding: 10px 30px;
+  text-decoration: none;
 }
 
-.text-box{
-    margin-top: 15%;
-    letter-spacing: 1px;
-    line-height: 26px
-
-}
-.text-box h1{
-    font-size: 4rem;
-  
-    line-height: 10rem
-
-}
-
-.text-box a{
-    margin-top: 30px;
-    display: inline-block;
-    border-radius: 0.5rem;
-    border: 0.32rem solid #ccc;
-    color: #ccc;
-    padding: 10px 30px;
-    text-decoration: none;
-}
-
-.text-box a .btn{
-background: #ccc;
-color:black;
-margin-left: 30px;
-font-weight: 600;
+.btn {
+  background: #ccc;
+  color: black;
+  margin-left: 30px;
+  font-weight: 600;
 }
