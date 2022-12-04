@@ -3,7 +3,7 @@ const TypeWriter = function (txtElement, words, wait = 3000) {
     this.words = words;
     this.txt = '';
     this.wordIndex = 0;
-    this.wait = parseInt(wait, 20);
+    this.wait = parseInt(wait, 10);
     this.type();
     this.isDeleting = false;
 

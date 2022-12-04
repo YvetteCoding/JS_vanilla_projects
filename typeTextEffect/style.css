@@ -4,10 +4,11 @@ body{
 
   font-family: "Raleway", sans-serif;
   height: 100vh;
-  background-image: url(..//public/milad-fakurian-GJKx5lhwU3M-unsplash.jpg);
+  background-image: url(..//public/brian-patrick-tagalog-_8hGFBxWD0A-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color:black;
+  
 }
 
 
@@ -26,11 +27,12 @@ h1, h2 {
 
 h1{
   font-size: 3.5rem;
+  color:#aaa;
 
 }
 h2{
   font-size: 2rem;
-  color: #aaa;
+  color: rgb(117, 114, 114);
 }
 /* .header {
   width: 100%;
